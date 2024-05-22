@@ -3,7 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import medical from "../public/portfolio-images/e-medical.png";
-import veveAdmin from "../public/portfolio-images/admin-veva.png"
+import veveAdmin from "../public/portfolio-images/admin-veva.png";
+import multilevel from "../public/portfolio-images/multilevel.png";
+import codekaplan from "../public/portfolio-images/codekaplan.png";
 
 export const links = [
   {
@@ -34,27 +36,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Self study",
-    description: "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2021",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Albison Academy",
+    location: "Tashkent Yunosobod",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "After successfully completing the Zero to FullStack course at Albison Academy, I started teaching at this academy. In the beginning, I started teaching as an assistant coach or assistant counselor, and then continued in several online groups. More than 75% of my online readers have found the job they wanted and I am very happy about that. I am currently teaching high quality web programming bootcamp classes.",
+    icon: React.createElement(LuGraduationCap),
+    date: "May 2022 - Aug 2024",
   },
   {
-    title: "Full-Stack Developer",
+    title: "One of my big projects",
+    location: "Online",
+    description:
+      "I took my first major project at the English Language Learning Center and it was very important for me to put the technologies I learned into practice. Project Summary I created a dashboard and a speech test landing page to test the mocks. Currently, about 200 people are regularly using this project. See this project in detail  👉  mock-tests.   And this project gave me good income",
+    icon: React.createElement(CgWorkAlt),
+    date: "",
+  },
+  {
+    title: "My collective projects at the Academy & Albison Group",
     location: "Houston, TX",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "At the same time, I actively and regularly participate in projects with the team at the academy. Our team has more experienced programmers than me, and I get advice from them. I participate in code review processes to maintain high quality standards, provide constructive feedback, and ensure the application follows best practices. I also perform unit and integration testing using Jest and React Testing Library to ensure code reliability and functionality. Examples of our most successful collective projects are e-medical.uz, adminveva.com, codekaplan.com, veva.uz You can get complete information about these projects from the portfolio.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "present",
   },
 ] as const;
 
@@ -79,6 +82,25 @@ export const projectsData = [
       heading: "Veva Water Dashboard",
     },
   },
+  {
+    title: "Test Your English Any Time Any Where MultiLevel English Test App",
+    description:
+      "Free IELTS Speaking Test: Prepare with IELTS Speaking Topics and Templates for IELTS Speaking Part 1, 2, & 3",
+    imageUrl: multilevel,
+    navigate: {
+      url: "https://mock-tests.vercel.app/",
+      heading: "mock-tests.com",
+    },
+  },
+  {
+    title: "C Futuristic  IT Education platform",
+    description: "Excellence is achieved by investing your todays for the brighter tomorrows. Invest in IT",
+    imageUrl: codekaplan,
+    navigate: {
+      url: "https://www.codekaplan.com",
+      heading: "codekaplan.com",
+    },
+  },
 ] as const;
 
 export const skillsData = [
@@ -88,14 +110,19 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Git",
-  "Tailwind",
+  "Git & Github",
+  "Tailwind CSS",
   "Zustand",
   "Antd Design",
   "Figma",
-  "Animete CSS",
   "Firebase",
   "Redux",
   "GraphQL",
   "Framer Motion",
+  "Solid Principles",
+  "Jira",
+  "Problems Solving",
+  "Testing Skills",
+  "Unit testing",
+  "Integration Testing",
 ] as const;
