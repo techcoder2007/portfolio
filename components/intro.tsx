@@ -9,16 +9,12 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { GlobeDemo } from "@/components/demo/global-world-demo";
-import { Playme } from "./audios/play-me";
-
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
-    <section ref={ref} id="home" className="max-w-[70rem] text-center sm:mb-0 scroll-mt-[100rem]">
-      <Playme />
-      <div className="flex items-center justify-center">
+    <section ref={ref} id="home" className="max-w-[70rem] text-center sm:mb-0 scroll-mt-[100rem] block">
+      <div className="flex items-center justify-center my-6">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -53,8 +49,7 @@ export default function Intro() {
           </motion.span>
         </div>
       </div>
-      <GlobeDemo />
-      <div className="block mx-auto mt-10">
+      <div>
         <motion.div
           className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}

@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import "./globals.css";
-import { Basic } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
@@ -8,7 +8,7 @@ import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import { Metadata } from "next";
 
-const inter = Basic({ subsets: ["latin"], weight: ["400"] });
+const inter = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Xasanjon | Portfolio",

@@ -2,10 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/portfolio-images/wikitsull-website.png";
-import rmtdevImg from "@/public/portfolio-images/youtube-website.png";
-import wordanalyticsImg from "@/public/portfolio-images/scholl.png";
-
+import medical from "../public/portfolio-images/e-medical.png";
+import veveAdmin from "../public/portfolio-images/admin-veva.png"
 
 export const links = [
   {
@@ -38,8 +36,7 @@ export const experiencesData = [
   {
     title: "Graduated bootcamp",
     location: "Self study",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    description: "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
     icon: React.createElement(LuGraduationCap),
     date: "2021",
   },
@@ -61,29 +58,26 @@ export const experiencesData = [
   },
 ] as const;
 
-
-
 export const projectsData = [
   {
-    title: "Wiki Tsull UZ",
+    title: "Automated medical service system",
     description:
-      "WikiTsull was our first project and we worked as a team on the project's dashboard. For more information, go to the following link https://www.wikitsuull.uz/uz/maqolalar",
-    tags: ["React", "Typescript", "React Query"],
-    imageUrl: corpcommentImg,
+      "We offer revolutionary solutions to improve the quality of medical services through digital technologies!",
+    imageUrl: medical,
+    navigate: {
+      url: "https://e-medical.uz/",
+      heading: "e-medical.uz",
+    },
   },
   {
-    title: "Youtube Clone",
+    title: "Veva - Чистая вода",
     description:
-      "I made a clone version of Youtube clone website as much as possible. This project has several functional parts like google  registration, all crud actions, SEO optimize etc.",
-    tags: ["React", "TypeScript", "Tailwind", "Chakra-ui", "Firebase"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "26th School Profile",
-    description:
-      "The 26th general school under the Ministry of Public Education of Uzbekistan was founded in 1984 Our school can meet modern and quality education standards with modern equipments to get enough knowledge",
-    tags: ["React", "Tailwind"],
-    imageUrl: wordanalyticsImg,
+      "logo. Phone Number. user. Phone Number. Password *. visibility_off. Password *. Login. Welcome to the. Veva water dashboard! Clean packaged water for your ...",
+    imageUrl: veveAdmin,
+    navigate: {
+      url: "https://adminveva.com/login",
+      heading: "Veva Water Dashboard",
+    },
   },
 ] as const;
 
