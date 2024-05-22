@@ -1,5 +1,6 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
+import { GlobeDemo } from "@/components/demo/global-world-demo";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";

@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Basic } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
@@ -8,22 +8,17 @@ import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import { Metadata } from "next";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Basic({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Xasanjon | Portfolio",
   description: "Xasanjon is a fronetend developer with 1 years of experience.",
   icons: {
-    icon: "/portfolio-images/favicon.png"
-  }
+    icon: "/portfolio-images/favicon.png",
+  },
 };
 
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="!scroll-smooth">
       <body
