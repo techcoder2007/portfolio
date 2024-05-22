@@ -25,7 +25,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/portfolio-images/user.jpg"
+              src="/portfolio-images/user.webp"
               alt="Xasanjon"
               width="230"
               height="230"
