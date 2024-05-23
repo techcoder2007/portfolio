@@ -12,7 +12,7 @@ const inter = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Xasanjon | Portfolio",
-  description: "Xasanjon is a fronetend developer with 1 years of experience.",
+  description: "Xasanjon is a fronetend developer with 2 years of experience.",
   icons: {
     icon: "/portfolio-images/favicon.png",
   },
